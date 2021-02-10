@@ -1,12 +1,12 @@
 {
-  "name": "ispark",
+  "name": "getir task",
   "version": "3.0.0",
   "description": "isparkminiapp",
   "engines": {
     "node": "10.x"
   },
   "scripts": {
-    "start": "node server/index.js",
+    "start": "node server/index.js && json-server -p 8000 -w db.json ",
     "build": "cd client/ && npm install && npm run build"
   },
   "cacheDirectories": [
