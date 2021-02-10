@@ -7,8 +7,6 @@ app.use(express.static(path.resolve(__dirname, "../client/build")));
 
 app.listen(PORT, function () {
   console.error(
-    `Node ${
-      isDev ? "dev server" : "cluster worker " + process.pid
-    }: listening on port ${PORT}`
+    `Node ${"cluster worker " + process.pid}: listening on port ${PORT}`
   );
 });
