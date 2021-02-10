@@ -6,7 +6,7 @@
     "node": "10.x"
   },
   "scripts": {
-    "start": "node server/index.js && json-server -p 8000 -w db.json ",
+    "start": "node server/index.js",
     "build": "cd client/ && npm install && npm run build"
   },
   "cacheDirectories": [
