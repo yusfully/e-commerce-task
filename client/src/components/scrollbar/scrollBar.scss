@@ -1,0 +1,40 @@
+[data-scrollbar] {
+    display: block;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+  }
+  .scrollbar-track.scrollbar-track-x {
+    display: none !important;
+  }
+  .content {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .scroll-content,
+  [scrollbar] .scroll-content,
+  [data-scrollbar] .scroll-content {
+    will-change: transform;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1 100%;
+    max-height: 100%;
+  }
+  .scrol-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  .scrollbar-track-x {
+    display: none !important;
+  }
+  .scroll-cover .scrollbar-thumb {
+    width: 4px;
+}
+ .scroll-cover .scrollbar-track-y {
+    width: 4px;
+}

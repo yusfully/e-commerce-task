@@ -1,0 +1,49 @@
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.pagination {
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.name {
+  display: flex;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.price {
+  line-height: 20px;
+  color: #20a3ce;
+  font-weight: bold;
+}
+
+.currency {
+  font-weight: 400;
+}
+
+.itemPicture {
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid #f3f0fe;
+  margin-bottom: 8px;
+}
+.itemImage {
+  max-width: 100%;
+}
+.buttonAddBasket {
+  margin-top: 8px;
+  &:hover {
+    background-color: #147594;
+    cursor: pointer;
+  }
+}
+.paginationNav {
+  display: flex;
+  margin-right: 16px;
+  align-items: center;
+}

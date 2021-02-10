@@ -1,0 +1,56 @@
+/*
+ * # Media Queries
+ */
+/// min phone width
+
+$min-phone-width: 320px !default;
+/// screen small
+
+$screen-small: 664px !default;
+/// screen medium
+
+$screen-medium: 816px !default;
+/// screen large
+/// @type string
+/// @group mediaqueries
+$screen-large: 1280px !default;
+/// screen extra large
+/// @type string
+/// @group mediaqueries
+$screen-extralarge: 1312px !default;
+/// screen phone
+/// @type string
+/// @group mediaqueries
+$screen-phone: 320px !default;
+/// screen phone wide
+/// @type string
+/// @group mediaqueries
+$screen-phone-wide: 360px !default; // apparently still in use
+/// screen phablet
+/// @type string
+/// @group mediaqueries
+$screen-phablet: 412px !default;
+/// screen tablet
+/// @type string
+/// @group mediaqueries
+$screen-tablet: 480px !default;
+/// screen tablet wide
+/// @type string
+/// @group mediaqueries
+$screen-tablet-wide: 600px !default;
+/// screen tablet wider
+/// @type string
+/// @group mediaqueries
+$screen-tablet-wider: 720px !default;
+/// screen
+/// @type string
+/// @group mediaqueries
+$screen: 'only screen' !default;
+/// landscape
+/// @type string
+/// @group mediaqueries
+$landscape: '#{$screen} and (orientation: landscape)' !default;
+/// portrait
+/// @type string
+/// @group mediaqueries
+$portrait: '#{$screen} and (orientation: portrait)' !default;

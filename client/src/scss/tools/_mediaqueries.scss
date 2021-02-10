@@ -1,0 +1,74 @@
+/// Handles min-width media queries
+///
+/// @group mediaqueries
+/// @param {String} $value - breakpoint variable
+///
+/// @example scss - Usage
+///   .foo {
+///     @include respond-to-min($screen-small) {
+///       width: 100%
+///     }
+///   }
+///
+/// @example scss - output
+///   @media only screen and (min-width: 664px) {
+///     .foo {
+///         width: 100%; }
+///      }
+///
+
+@mixin respond-to-min($value) {
+    @media #{$screen} and (min-width: $value) {
+        @content;
+    }
+}
+
+/// Handles max-width media queries
+///
+/// @group mediaqueries
+/// @param {String} $value - breakpoint variable
+///
+/// @example scss - Usage
+///   .foo {
+///     @include respond-to-max($screen-small) {
+///       width: 100%
+///     }
+///   }
+///
+/// @example scss - output
+///   @media only screen and (max-width: 664px) {
+///     .foo {
+///         width: 100%; }
+///      }
+///
+
+@mixin respond-to-max($value) {
+    @media #{$screen} and (max-width: $value) {
+        @content;
+    }
+}
+
+/// Handles min-max-width media queries
+///
+/// @group mediaqueries
+/// @param {String} $value - breakpoint variable
+///
+/// @example scss - Usage
+///   .foo {
+///     @include respond-to-max($screen-small) {
+///       width: 100%
+///     }
+///   }
+///
+/// @example scss - output
+///   @media only screen and (min-width: 664px) and (max-width: 1280px)  {
+///     .foo {
+///         width: 100%; }
+///      }
+///
+
+@mixin respond-to-min-max($value-from, $value-to) {
+    @media #{$screen} and (min-width: $value-from) and (max-width: $value-to) {
+        @content;
+    }
+}

@@ -1,0 +1,7 @@
+@import '../../../scss/settings/imports';
+
+.flex{
+display: flex;
+flex-direction: column;
+padding: $spacing*3
+}
