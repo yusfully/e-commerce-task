@@ -23,7 +23,9 @@ if (!isDev && cluster.isMaster) {
 } else {
   const app = express();
   app.use(express.static(path.resolve(__dirname, "../client/build")));
-
+  app.get("*", function (request, response) {
+    response.sendFile(path.resolve(__dirname, "../client/build", "index.html"));
+  });
   app.listen(PORT, function () {
     console.error(
       `Node ${"cluster worker " + process.pid}: listening on port ${PORT}`
